@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body
+{ background-color: lightgray!important;
+}
+ 
+  .flip-card {
+    background-color: dimgray;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 20px;
+  }
+ 
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 color:gray ;
+    border-radius: 20px;
+  }
+ 
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+ 
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    border: solid #544E4E 5px;
+  }
+ 
+  .flip-card-front {
+    background-color: #7C7777;
+    color: black;
+    border-radius: 20px;
+  }
+ 
+  .flip-card-back {
+    background-color: #515151;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+  }
+
+  ul li{
+    display: inline-block;
+    padding-bottom: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+  h3{
+    padding-bottom: 1%;
+  }
+  h1{
+    padding-top: 5%;
+	  font-family: condiment!important;
+  }
+  .active li{
+    display: inline-block;
+  }
+  .active li:hover{
+    background-color: gray;
+  }
+  #github{
+    font-size: 200%;
+  }
+  img{
+    margin-top: 13%;
+  }
+  @media screen and (max-width: 500px) {
+    .kartyalinkek li{
+      width:100%;
+    }
+  }
+  .kartyalinkek li a{
+      transition: all 0.3s ease 0s;
+      color:#b0c8f4;
+      text-decoration: none;
+    font-family: aquate;
+    font-size: 200%;
+    padding: 25px;
+    background-color: transparent;
+   
+   
+ 
+  }
+  .kartyalinkek li a:hover{
+     
+    color: rgb(2, 58, 92);
+  }
+
+  .kartyalinkek{
+    margin-top: 40%;
+  }
+.asd
+{
+	transition: all 0.3s ease 0s;
+      color:#4A1E55;
+      text-decoration: none;
+    font-family: condiment!important;
+    font-size: 200%;
+    padding: 25px;
+}
